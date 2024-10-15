@@ -19,9 +19,9 @@ module.exports = {
         notoSansGeorgian: ['noto-sans-georgian', 'sans-serif']
       },
       fontSize: {
-        'body-desktop': '1rem',
-        'body-xl': '0.875rem',
-        'body-mobile': '0.6rem'
+        'body-desktop': '100%',
+        'body-xl': '80%',
+        'body-mobile': '75%'
       }
     }
   },

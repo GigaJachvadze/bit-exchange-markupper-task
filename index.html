@@ -6,47 +6,47 @@
     <link rel="stylesheet" href="./styles/output.css">
     <title>Document</title>
 </head>
-<body class="bg-background font-notoSansGeorgian xl">
+<body class="bg-background font-notoSansGeorgian relative">
     <header class="customContainer flex justify-between items-center gap-1 text-main-text py-2">
         <div class="flex items-center">
-            <div class="w-32 h-4 bg-purple-800"></div>
+            <img class="w-32" src="./assets/header/logo.svg" alt="">
         </div>
         <nav class="md:flex hidden justify-center items-center">
             <ul class="flex items-center gap-1">
-                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
-                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                <li class="flex justify-between items-center xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <img src="./assets/header/nav_1.svg" alt="">
                     <span>გვერდი 1</span>
                 </li>
-                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
-                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                <li class="flex justify-between items-center xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <img src="./assets/header/nav_2.svg" alt="">
                     <span>გვერდი 2</span>
                 </li>
-                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
-                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                <li class="flex justify-between items-center xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <img src="./assets/header/nav_3.svg" alt="">
                     <span>გვერდი 3</span>
                 </li>
-                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
-                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                <li class="flex justify-between items-center xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <img src="./assets/header/nav_4.svg" alt="">
                     <span>გვერდი 4</span>
                 </li>
             </ul>
         </nav>
         <div class="md:w-fit w-full flex md:justify-center justify-around items-center 2xl:gap-24 xl:gap-16 md:gap-8 gap-24">
-            <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
-            <button class="bg-button-primary hover:bg-button-primary-hover text-button-primary-text transition-colors px-3 py-1 rounded-lg outline-none xl:text-body-desktop text-body-xl">შესვლა</button>
+            <img class="rounded-lg" src="./assets/header/flag.svg" alt="">
+            <button class="bg-button-primary hover:bg-button-primary-hover text-button-primary-text transition-colors px-3 py-1 rounded-lg outline-none">შესვლა</button>
         </div>
     </header>
     <main class="customContainer flex flex-col gap-8">
         <section class="bg-card-background rounded-xl p-2">
-            <div class="lg:w-1/2 w-full mx-auto">
-                <h2 class="text-sub-text text-sm">შეიყვანე კრიპტოს რაოდენობა</h2>
+            <div class="lg:w-1/2 w-full flex flex-col gap-2 mx-auto">
+                <h2 class="text-sub-text text-sm my-2">შეიყვანე კრიპტოს რაოდენობა</h2>
                 <div class="flex flex-col gap-1 relative">
-                    <div class="flex justify-between items-center p-2 bg-exchange-background rounded-t-lg rounded-b-sm">
+                    <div class="flex justify-between items-center p-2 bg-exchange-background rounded-t-xl rounded-b-sm">
                         <div class="flex flex-col gap-1 relative w-full">
-                            <span class="text-main-text text-sm">გაყიდვა</span>
+                            <span class="text-main-text ">გაყიდვა</span>
                             <input class="rounded-lg pr-12 bg-exchange-background outline-none text-main-text" placeholder="რაოდენობა" type="number">
                             <span class="text-button-primary hover:text-button-primary-hover cursor-pointer absolute top-1/2 right-0 -translate-x-2 -translate-y-1/2">მაქს</span>
-                            <span class="text-sub-text text-sm">საფულეში: 0.0002 BTC</span>
+                            <span class="text-sub-text ">საფულეში: 0.0002 BTC</span>
                         </div>
                         <div class="flex justify-center items-center">
                             <select class="rounded-lg">
@@ -54,25 +54,151 @@
                             </select>
                         </div>
                     </div>
-                    <div class="flex justify-between items-center p-2 bg-exchange-background rounded-b-lg rounded-t-sm">
+                    <div class="flex justify-between items-center p-2 bg-exchange-background rounded-b-xl rounded-t-sm">
                         <div class="flex flex-col gap-1 relative w-full">
-                            <span class="text-main-text text-sm">გაყიდვა</span>
+                            <span class="text-main-text">გაყიდვა</span>
                             <input class="rounded-lg pr-12 bg-exchange-background outline-none text-main-text" placeholder="რაოდენობა" type="number">
-                            <span class="text-button-primary hover:text-button-primary-hover cursor-pointer absolute top-1/2 right-0 -translate-x-2 -translate-y-1/2">მაქს</span>
-                            <span class="text-sub-text text-sm">საფულეში: 0.0002 BTC</span>
+                            <span class="text-sub-text">საფულეში: 3.2411 DASH</span>
                         </div>
                         <div class="flex justify-center items-center">
                             <select class="rounded-lg">
-                                <option value="">BTC</option>
+                                <option value="">DASH</option>
                             </select>
                         </div>
                     </div>
-                    <div class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-card-background bg-background w-12 h-12">
-
+                    <div class="flex justify-center items-center absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-card-background bg-background hover:bg-card-background md:w-14 md:h-14 w-10 h-10 cursor-pointer">
+                        <img src="./assets/exchange/swap.svg" alt="">
                     </div>
+                </div>
+                <div class="flex items-center justify-between">
+                    <h2 class="text-sub-text">ღირებულება</h2>
+                    <h2 class="text-main-text">1 BTC = 2,717.92 DASH</h2>
+                </div>
+                <button class="bg-button-primary hover:bg-button-primary-hover transition-colors text-button-primary-text py-3 rounded-xl">გადაცვალე BTC</button>
+            </div>
+        </section>
+        <section class="flex flex-col p-2">
+            <div class="flex flex-col gap-4 my-4">
+                <h2 class="text-main-text text-xl font-semibold">კრიპტო ბაზარი</h2>
+                <span class="text-sub-text text-sm">ივაჭრე და გადარიცხე კრიპტოვალუტა მომენტალურად</span>
+            </div>
+            <div class="flex flex-col">
+                <div class="listItem rounded-t-xl bg-card-background border">
+                    <span class="md:w-4/6 w-1/3">კრიპტოვალუტა</span>
+                    <span class="md:w-1/6 w-1/3">ყიდვა</span>
+                    <span class="md:w-1/6 w-1/3">გაყიდვა</span>
+                </div>
+                <div class="listItem border-b border-r border-l">
+                    <span class="md:w-4/6 w-1/3 py-4">
+                        <span class="flex items-center gap-2">
+                            <img src="./assets/list/btc.svg" alt="">
+                            <div class="flex md:flex-row flex-col gap-1">
+                                <span class="text-main-text">Bitcoin</span>
+                                <span class="text-sub-text">BTC</span>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="md:w-1/6 w-1/3 text-green-600">182290.07 GEL</span>
+                    <span class="md:w-1/6 w-1/3 text-red-600">182290.07 GEL</span>
+                </div>
+                <div class="listItem border-b border-r border-l">
+                    <span class="md:w-4/6 w-1/3 py-4">
+                        <span class="flex items-center gap-2">
+                            <img src="./assets/list/ltc.svg" alt="">
+                            <div class="flex md:flex-row flex-col gap-1">
+                                <span class="text-main-text">Litecoin</span>
+                                <span class="text-sub-text">LTC</span>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="md:w-1/6 w-1/3 text-green-600">191.78 GEL</span>
+                    <span class="md:w-1/6 w-1/3 text-red-600">178.81 GEL</span>
+                </div>
+                <div class="listItem border-b border-r border-l">
+                    <span class="md:w-4/6 w-1/3 py-4">
+                        <span class="flex items-center gap-2">
+                            <img src="./assets/list/bch.svg" alt="">
+                            <div class="flex md:flex-row flex-col gap-1">
+                                <span class="text-main-text">Bitcoin Cash</span>
+                                <span class="text-sub-text">BCH</span>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="md:w-1/6 w-1/3 text-green-600">17414.78 GEL</span>
+                    <span class="md:w-1/6 w-1/3 text-red-600">6913.3 GEL</span>
+                </div>
+                <div class="listItem border-b border-r border-l">
+                    <span class="md:w-4/6 w-1/3 py-4">
+                        <span class="flex items-center gap-2">
+                            <img src="./assets/list/dash.svg" alt="">
+                            <div class="flex md:flex-row flex-col gap-1">
+                                <span class="text-main-text">Dash</span>
+                                <span class="text-sub-text">DASH</span>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="md:w-1/6 w-1/3 text-green-600">1634.68 GEL</span>
+                    <span class="md:w-1/6 w-1/3 text-red-600">1524.13 GEL</span>
+                </div>
+                <div class="listItem border-b border-r border-l">
+                    <span class="md:w-4/6 w-1/3 py-4">
+                        <span class="flex items-center gap-2">
+                            <img src="./assets/list/doge.svg" alt="">
+                            <div class="flex md:flex-row flex-col gap-1">
+                                <span class="text-main-text">Dogecoin</span>
+                                <span class="text-sub-text">DOGE</span>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="md:w-1/6 w-1/3 text-green-600">0.4388 GEL</span>
+                    <span class="md:w-1/6 w-1/3 text-red-600">0.4091 GEL</span>
+                </div>
+                <div class="listItem border-b border-r border-l rounded-b-xl">
+                    <span class="md:w-4/6 w-1/3 py-4">
+                        <span class="flex items-center gap-2">
+                            <img src="./assets/list/trx.svg" alt="">
+                            <div class="flex md:flex-row flex-col gap-1">
+                                <span class="text-main-text">Tron</span>
+                                <span class="text-sub-text">TRX</span>
+                            </div>
+                        </span>
+                    </span>
+                    <span class="md:w-1/6 w-1/3 text-green-600">0.3339 GEL</span>
+                    <span class="md:w-1/6 w-1/3 text-red-600">0.3339 GEL</span>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="customContainer relative">
+        <div class="p-2">
+            <img src="./assets/footer/logo.svg" alt="">
+        </div>
+        <div class="flex md:flex-row flex-col md:gap-12 gap-4 p-2">
+            <div class="flex flex-col gap-2">
+                <span class="text-sub-text">კონტაქტები</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 1</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 2</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 3</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 4</span>
+            </div>
+            <div class="flex flex-col gap-2">
+                <span class="text-sub-text">ჩვენს შესახებ</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 1</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 2</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 3</span>
+                <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 4</span>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col md:gap-4 gap-1 p-2">
+            <span class="text-main-text">© 2025 ourwebsite.ge. ყველა უფლება დაცულია</span>
+            <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 1</span>
+            <span class="text-button-primary hover:text-button-primary-hover transition-colors cursor-pointer">ლინკი 2</span>
+        </div>
+    </footer>
+    <div class="absolute bottom-0 right-0 w-full h-96 overflow-hidden z-50 pointer-events-none">
+        <div class="absolute right-0 bottom-0 xl:translate-y-1/4 md:translate-y-1/2 -translate-y-6 translate-x-1/4 ">
+            <img class="-rotate-45" src="./assets/footer/logo_big.svg" alt="">
+        </div>
+    </div>
 </body>
 </html>
