@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Coding Task</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+  <!-- Header -->
+  <header class="text-center py-8 bg-gray-800">
+    <h1 class="text-3xl font-bold">Crypto Trading Dashboard</h1>
+    <p class="text-gray-400 mt-2">Track and manage your favorite cryptocurrencies.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      <!-- Filter Form -->
+      <section class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Filter Cryptocurrencies</h2>
+        <form class="space-y-4">
+          <!-- Search -->
+          <div>
+            <label for="search" class="block text-gray-400">Search</label>
+            <input id="search" type="text" class="w-full p-2 rounded-md bg-gray-700 text-gray-200" placeholder="Enter cryptocurrency name">
+          </div>
+
+          <!-- Dropdown -->
+          <div>
+            <label for="filter" class="block text-gray-400">Sort by</label>
+            <select id="filter" class="w-full p-2 rounded-md bg-gray-700 text-gray-200">
+              <option value="market-cap">Market Cap</option>
+              <option value="price">Price</option>
+              <option value="volume">Volume</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-green-500 text-white py-2 rounded-md hover:bg-green-600">
+            Apply Filter
+          </button>
+        </form>
+      </section>
+
+      <!-- Crypto Cards -->
+      <section class="space-y-6">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Bitcoin (BTC)</h3>
+          <p class="text-gray-400 mt-2">Price: $57,000</p>
+          <p class="text-gray-400">Market Cap: $1.1T</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Ethereum (ETH)</h3>
+          <p class="text-gray-400 mt-2">Price: $3,500</p>
+          <p class="text-gray-400">Market Cap: $400B</p>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">Solana (SOL)</h3>
+          <p class="text-gray-400 mt-2">Price: $160</p>
+          <p class="text-gray-400">Market Cap: $50B</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-4 mt-10">
+    <p class="text-gray-400">&copy; 2024 Crypto Dashboard</p>
+  </footer>
+
+</body>
+</html>

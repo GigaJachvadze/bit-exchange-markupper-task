@@ -3,65 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Mockup Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <h1>My Website</h1>
+<body class="bg-background font-notoSansGeorgian xl">
+    <header class="customContainer flex justify-between items-center gap-1 text-main-text py-2">
+        <div class="flex items-center">
+            <div class="w-32 h-4 bg-purple-800"></div>
+        </div>
+        <nav class="md:flex hidden justify-center items-center">
+            <ul class="flex items-center gap-1">
+                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                    <span>გვერდი 1</span>
+                </li>
+                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                    <span>გვერდი 2</span>
+                </li>
+                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                    <span>გვერდი 3</span>
+                </li>
+                <li class="flex justify-between xl:px-4 px-3 xl:py-2 py-1 gap-2 bg-button rounded-xl hover:bg-button-hover transition-colors cursor-pointer whitespace-nowrap">
+                    <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+                    <span>გვერდი 4</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="md:w-fit w-full flex md:justify-center justify-around items-center 2xl:gap-24 xl:gap-16 md:gap-8 gap-24">
+            <div class="w-6 h-6 bg-purple-800 rounded-lg"></div>
+            <button class="bg-button-primary hover:bg-button-primary-hover text-button-primary-text transition-colors px-3 py-1 rounded-lg outline-none xl:text-body-desktop text-body-xl">შესვლა</button>
+        </div>
     </header>
+    <main class="customContainer flex flex-col gap-8">
+        <section class="bg-card-background rounded-xl p-2">
+            <div class="lg:w-1/2 w-full mx-auto">
+                <h2 class="text-sub-text text-sm">შეიყვანე კრიპტოს რაოდენობა</h2>
+                <div class="flex flex-col gap-1 relative">
+                    <div class="flex justify-between items-center p-2 bg-exchange-background rounded-t-lg rounded-b-sm">
+                        <div class="flex flex-col gap-1 relative w-full">
+                            <span class="text-main-text text-sm">გაყიდვა</span>
+                            <input class="rounded-lg pr-12 bg-exchange-background outline-none text-main-text" placeholder="რაოდენობა" type="number">
+                            <span class="text-button-primary hover:text-button-primary-hover cursor-pointer absolute top-1/2 right-0 -translate-x-2 -translate-y-1/2">მაქს</span>
+                            <span class="text-sub-text text-sm">საფულეში: 0.0002 BTC</span>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <select class="rounded-lg">
+                                <option value="">BTC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center p-2 bg-exchange-background rounded-b-lg rounded-t-sm">
+                        <div class="flex flex-col gap-1 relative w-full">
+                            <span class="text-main-text text-sm">გაყიდვა</span>
+                            <input class="rounded-lg pr-12 bg-exchange-background outline-none text-main-text" placeholder="რაოდენობა" type="number">
+                            <span class="text-button-primary hover:text-button-primary-hover cursor-pointer absolute top-1/2 right-0 -translate-x-2 -translate-y-1/2">მაქს</span>
+                            <span class="text-sub-text text-sm">საფულეში: 0.0002 BTC</span>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <select class="rounded-lg">
+                                <option value="">BTC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 rounded-full border-4 border-card-background bg-background w-12 h-12">
 
-
-
-    <main>
-        <section>
-            <div class="col">
-                <div class="imgContainer">
-                    <img src="https://cdn-bmnli.nitrocdn.com/CdvqByeTEzRyUipAyKlfFxNJxyBFexEc/assets/images/optimized/rev-a7c214d/www.socialfilms.co.uk/wp-content/uploads/2020/05/Instagram-Stories-Video-Ad-Size-Dimensions.jpg" alt="">
-                </div>
-                <div class="imgContainer">
-                    <img src="https://cdn-bmnli.nitrocdn.com/CdvqByeTEzRyUipAyKlfFxNJxyBFexEc/assets/images/optimized/rev-a7c214d/www.socialfilms.co.uk/wp-content/uploads/2020/05/Instagram-Stories-Video-Ad-Size-Dimensions.jpg" alt="">
-                </div>
-                <div class="imgContainer">
-                    <img src="https://cdn-bmnli.nitrocdn.com/CdvqByeTEzRyUipAyKlfFxNJxyBFexEc/assets/images/optimized/rev-a7c214d/www.socialfilms.co.uk/wp-content/uploads/2020/05/Instagram-Stories-Video-Ad-Size-Dimensions.jpg" alt="">
-                </div>
-            </div>
-            <div class="col">
-                <div class="imgContainer">
-                    <img src="https://cdn-bmnli.nitrocdn.com/CdvqByeTEzRyUipAyKlfFxNJxyBFexEc/assets/images/optimized/rev-a7c214d/www.socialfilms.co.uk/wp-content/uploads/2020/05/Instagram-Stories-Video-Ad-Size-Dimensions.jpg" alt="">
-                </div>
-                <div class="imgContainer">
-                    <img src="https://cdn-bmnli.nitrocdn.com/CdvqByeTEzRyUipAyKlfFxNJxyBFexEc/assets/images/optimized/rev-a7c214d/www.socialfilms.co.uk/wp-content/uploads/2020/05/Instagram-Stories-Video-Ad-Size-Dimensions.jpg" alt="">
-                </div>
-                <div class="imgContainer">
-                    <img src="https://cdn-bmnli.nitrocdn.com/CdvqByeTEzRyUipAyKlfFxNJxyBFexEc/assets/images/optimized/rev-a7c214d/www.socialfilms.co.uk/wp-content/uploads/2020/05/Instagram-Stories-Video-Ad-Size-Dimensions.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-
-    <button id="toggleBtn">
-        <nav id="sideNav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </button>
-
-    <script>
-        const toggleBtn = document.getElementById('toggleBtn');
-        const sideNav = document.getElementById('sideNav');
-
-        toggleBtn.addEventListener('click', () => {
-            sideNav.classList.toggle('open');
-        });
-    </script>
 </body>
 </html>
