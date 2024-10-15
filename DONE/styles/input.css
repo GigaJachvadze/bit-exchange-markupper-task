@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: noto-sans-georgian;
+    src: url('../assets/font/NotoSansGeorgian-VariableFont_wdth\,wght.ttf');
+}
+
+@layer base {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    body {
+      @apply text-body-mobile;
+    }
+
+    @screen md { /* applying font size for lg breakpoint */
+        body {
+          @apply text-body-xl;
+        }
+    }
+    
+    @screen xl { /* applying font size for lg breakpoint */
+        body {
+          @apply text-body-desktop;
+        }
+    }
+}
+
+@layer components {
+    .customContainer {
+      @apply lg:w-3/4 mx-auto lg:p-0 p-1 xl:p-4;
+    }
+
+    .listItem {
+      @apply flex justify-start items-center md:px-6 px-3 py-2 text-sub-text border-exchange-background;
+    }
+}
